@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Cinzel"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+
+    <!-- Materialize CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <script src="https://www.gstatic.com/firebasejs/5.8.6/firebase.js"></script>
+    <title>GoT Theories? | Home</title>
+  </head>
+
+  <body>
+    <header>
+        <nav class="nav-wrapper">
+            <ul id="dropdown1" class="dropdown-content black">
+                <li><a href="/theory" class="white-text">Write Theory</a></li>
+                <li><a href="/" class="white-text">Logout</a></li>
+            </ul>
+            <nav>
+                <div class="nav-wrapper black">
+                    <a href="" class="sidenav-trigger" data-target="mobile-menu">
+                        <i class="material-icons">menu</i>
+                    </a>
+                    <ul class="right hide-on-med-and-down">
+                        <li><a href="/main.html" class="white-text">Home</a></li>
+                        <li><a href="/theory" class="white-text">Theories</a></li>
+                        <li><a href="/characters" class="white-text">Characters</a></li>
+                        <!-- Dropdown Trigger -->
+                        <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">
+                                <div id="dropDownMenu"></div><i class="material-icons right">arrow_drop_down</i>
+                            </a></li>
+                    </ul>
+                </div>
+                </div>
+
+                <ul class="sidenav black" id="mobile-menu">
+                    <h3 class="menuButton">Menu</h3>
+                    <li><a href="/main.html" class="white-text">Home</a></li>
+                    <li><a href="/theory" class="white-text">Theories</a></li>
+                    <li><a href="/characters" class="white-text">Characters</a></li>
+                    <li><a href="/" class="white-text">Logout</a></li>
+                </ul>
+            </nav>
+
+      <div class="container white-text center section">
+        <div class="row">
+          <div class="col s12 l12 trans">
+            <div class="push">
+              <h2>Game of Thrones Theories</h2>
+              <h5>
+                Are you interested in starting heated debates about different
+                GoT theories? You're at the right place. You can look through
+                various theories and discuss your thoughts as we near the end of
+                the series.
+              </h5>
+              <a href="/theory" class="waves-effect btn black writeTheory"><i class="material-icons left" id="pencil">create</i>Write Theory</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main></main>
+
+    <footer class="page-footer black">
+        <div class="container">
+            <div class="row">
+                <div class="col l12 m12 s12">
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container center">
+                © 2019 Copyright
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script>
+      $(document).ready(function() {
+        $(".sidenav").sidenav();
+        $(".dropdown-trigger").dropdown();
+      });
+    </script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.0/moment.min.js"
+      type="text/javascript"
+    ></script>
+
+    <!-- Our stuff -->
+    <script src="js/firebase.js"></script>
+    <script src="js/main.js"></script>
+    <!-- firebase -->
+  </body>
+</html>

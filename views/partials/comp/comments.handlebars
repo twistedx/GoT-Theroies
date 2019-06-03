@@ -1,0 +1,17 @@
+{{#each comments}}
+<div class="post card">
+    <div class="timeCreated">{{timeStamp this.createdAt}}</div>
+    <div class="card-title">{{this.title}}</div>
+    <div class="card-content">
+        <span>{{this.body}}</span>
+
+        <div class="voting center">
+            <button class="waves-effect btn black center writeTheory editComment" id="editComment"
+                value="{{this.id}}">Edit</button>
+            <button class="waves-effect btn black center writeTheory deleteComment" id="deleteComment"
+                value="{{this.id}}">X</button>
+        </div>
+    </div>
+</div>
+{{/each}}
+<a class="waves-effect btn black left writeTheory commentButton modal-trigger" href="#modal3">Comment</a>

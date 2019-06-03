@@ -1,0 +1,81 @@
+{{> comp/nav}}
+
+<main>
+    <section>
+        <div class="container section">
+            <div class="row">
+                <div class="col s12">
+                    <div id="theoryDiv" class="white-text center">
+                        <span class="gotTheoryLogo">GoT Comments?</span>
+                        <div id="theoryModal"><a class="waves-effect btn modal-trigger black left writeTheory"
+                                href="/theory"><i class="material-icons left">arrow_back</i>Return to Theory</a></div>
+                        <div id="theoriesGoHere" class="section">
+                            <div class="row section">
+
+
+
+
+                                <div class="post card">
+                                    <div class="timeCreated">{{Comment.Post.createdAt}}</div>
+                                    <div class="card-title">{{Post.title}}</div>
+                                    <div class="card-content">
+                                        <span>{{Post.body}}</span>
+
+                                    </div>
+                                </div>
+
+                                {{> comp/comments comments=Comment}}
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+</main>
+
+<div id="modal3" class="modal">
+    <div class="modal-content">
+        <div class="row">
+            <div class="col s12">
+                <label for="icon_prefix" id="author"></label>
+            </div>
+            <div class="input-field col s12 titleLabel">
+                <input id="title" type="text">
+                <label for="icon_prefix" class="black-text">Title:</label>
+            </div>
+            <form class="col s12">
+                <div class="row">
+                    <div class="input-field col s12 titleLabel">
+                        <textarea id="body" class="materialize-textarea"></textarea>
+                        <label for="icon_prefix" class="black-text">Comment:</label>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <a href="#!" id="cms" class="modal-close waves-effect theoryModal btn-flat white-text black">Submit</a>
+    </div>
+</div>
+
+
+{{> comp/footer}}
+
+
+<!-- firebase -->
+<script src="https://www.gstatic.com/firebasejs/5.8.6/firebase.js"></script>
+<script src="../js/firebase.js"></script>
+<script src="../js/comment.js" type="text/javascript"></script>
+<script src="../js/main.js" type="text/javascript"></script>
+
+
+<script>
+    $(document).ready(function () {
+        $(".sidenav").sidenav();
+        $(".dropdown-trigger").dropdown();
+        $('.modal').modal();
+        $('select').formSelect();
+
+    });
+</script>

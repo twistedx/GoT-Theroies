@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+
+    <!-- Materialize CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <title>GoT Theories? | Login</title>
+
+    <!-- default google UI - Uncomment to use default   -->
+    <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <nav class="nav-wrapper">
+            <ul id="dropdown1" class="dropdown-content black">
+                <li><a href="/theory" class="white-text">Write Theory</a></li>
+                <li><a href="/" class="white-text">Logout</a></li>
+            </ul>
+            <nav>
+                <div class="nav-wrapper black">
+                    <a href="" class="sidenav-trigger" data-target="mobile-menu">
+                        <i class="material-icons">menu</i>
+                    </a>
+                    <ul class="right hide-on-med-and-down">
+                        <li><a href="/main.html" class="white-text">Home</a></li>
+                        <li><a href="/theories" class="white-text">Theories</a></li>
+                        <li><a href="/characters" class="white-text">Characters</a></li>
+                        <!-- Dropdown Trigger -->
+                        <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">
+                                <div id="dropDownMenu">
+
+                                </div><i class="material-icons right">arrow_drop_down</i>
+                            </a></li>
+                    </ul>
+                </div>
+                </div>
+
+                <ul class="sidenav black" id="mobile-menu">
+                    <h3 class="menuButton">Menu</h3>
+                    <li><a href="/main.html" class="white-text">Home</a></li>
+                    <li><a href="/theory" class="white-text">Theories</a></li>
+                    <li><a href="/characters" class="white-text">Characters</a></li>
+                    <li><a href="/" class="white-text">Logout</a></li>
+                </ul>
+            </nav>
+    </header>
+
+<main>
+<section id= "login">
+    <div class="container section">
+        <div class="row section">
+            <div class="auth mx-auto">
+                    <div class="login" id="firebaseui-auth-container"></div>
+                    <div id="loader">Loading...</div>
+            </div>
+        </div>
+    </div>
+</section>
+</main>
+
+<footer class="page-footer black">
+    <div class="container">
+        <div class="row">
+            <div class="col l12 m12 s12">
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="container center">
+            © 2019 Copyright
+        </div>
+    </div>
+</footer>
+
+    <!-- jquery with ajax -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- firebase -->
+    <script src="https://www.gstatic.com/firebasejs/5.8.6/firebase.js"></script>
+    <script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
+
+    <!-- Our stuff -->
+    <script src="js/firebase.js"></script>
+    <script src="js/login.js"></script>
+
+    <!-- boostrap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+</html>
